@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <EditText
+        android:id="@+id/edittxt1"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="170dp"
+        android:hint="Nhap so thu 1:"
+        android:inputType="number"
+        android:textColorHint="#FFF" />
+    <EditText
+
+        android:textColorHint="#FFF"
+        android:hint="Nhap so thu 2"
+        android:id="@+id/edittxt2"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        android:inputType="number"
+        android:layout_below="@+id/edittxt1"
+         />
+
+    <TextView
+        android:id="@+id/text_Random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_random"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="0"
+        android:textColor="#F80000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittxt2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="33dp"
+        android:text="Random"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:layout_width="73dp"
+        android:layout_height="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/xucxac"
+        android:id="@+id/imageview1"/>
+
+</RelativeLayout>
